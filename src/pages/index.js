@@ -24,7 +24,7 @@ export default ({ data, location }) => {
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
-  console.log(posts)
+
   const categories = useMemo(
     () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
     []
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 200, truncate: true)
+          excerpt(pruneLength: 350, truncate: false)
           fields {
             slug
           }
