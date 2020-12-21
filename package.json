@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-bee",
+  "name": "my-blog",
   "private": true,
-  "description": "Gatsby blog starter template",
+  "description": "My learning journey",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "turutupa",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/turutupa/alblog/issues"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",

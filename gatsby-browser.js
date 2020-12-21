@@ -1,6 +1,3 @@
-require('firebase/auth')
-require('firebase/firestore')
-
 // custom typefaces
 require('typeface-noto-sans-kr')
 require('typeface-catamaran')
