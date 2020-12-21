@@ -1,8 +1,16 @@
+require('dotenv').config()
 const metaConfig = require('./gatsby-meta-config')
 
 module.exports = {
   siteMetadata: metaConfig,
   plugins: [
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
+        plugins: [`gatsby-remark-images`],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -68,14 +76,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: metaConfig.ga,
-        head: true,
-        anonymize: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: metaConfig.title,
@@ -93,6 +93,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
