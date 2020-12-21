@@ -1,0 +1,6 @@
+---
+title: "## Dogs sweat through their paws."
+date: 2020-12-21T15:05:02.627Z
+category: dogs
+---
+Have you ever noticed your dog's paws smelling like corn chips? Turns out, this isn't because they've broken into your pantry. Although dogs cool themselves down by panting – which circulates air through their bodies – they actually sweat through their paw pads. When sweat and bacteria build up on their feet, it gives off that unique scent. Cleaning your dog's paws is especially necessary in the winter if they're trotting through salt; dog paws are very sensitive to the elements. However, a muddy summer is also a reason to clean their feet. Dirty paws can hide cuts or abrasions on the paw pads, making it harder to tell when your pup needs a trip to the vet. For minor cleanups, a moist towelette (like a baby wipe) should do the trick. Just make sure to check the product's ingredients; some compounds that are safe for humans (like alcohol) can be harmful to your furry friend. If a wipe isn't enough, you may need to clean paws in the tub with pet-safe soap and water. Dry gently with a towel when you're done.
