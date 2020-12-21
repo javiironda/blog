@@ -44,6 +44,13 @@ body.light {
   }
 
   .thumbnail {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 1px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+
     h3 {
       color: $dark-gray;
     }
@@ -51,7 +58,7 @@ body.light {
       color: $middle-gray;
     }
     &:hover {
-      text-shadow: $light-hover-text-shadow;
+      filter: brightness(0.95);
     }
   }
 

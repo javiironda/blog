@@ -8,12 +8,11 @@ public_folder: ../assets
 
 collections:
   - name: my-thoughts
-    label: Dogs
+    label: My Thoughts
     folder: content/blog
     create: true
-    category: dogs
     fields:
       - { name: 'title', label: 'Title' }
       - { name: 'date', label: 'Date', widget: 'date' }
-      - { name: 'category', label: 'Category', default: 'dogs' }
+      - { name: 'category', label: 'Category', default: 'random' }
       - { name: 'body', label: 'Body', widget: 'markdown' }

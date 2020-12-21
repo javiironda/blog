@@ -37,8 +37,6 @@ exports.createPages = ({ graphql, actions }) => {
       ({ node }) => !!node.frontmatter.category
     )
 
-    console.log('POSTS', JSON.stringify(posts, null, 2))
-
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
