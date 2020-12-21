@@ -7,9 +7,31 @@ media_folder: content/assets
 public_folder: ../assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
+  - name: dogs
+    label: Dogs
+    folder: content/blog/dogs
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: category, label: Category }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: finance
+    label: Finance
+    folder: content/blog/finance
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: category, label: Category }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: life
+    label: Life
+    folder: content/blog/life
     create: true
     fields:
       - { name: path, label: Path }
