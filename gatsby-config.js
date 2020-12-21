@@ -4,13 +4,6 @@ module.exports = {
   siteMetadata: metaConfig,
   plugins: [
     {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        extensions: ['.mdx', '.md'],
-        plugins: [`gatsby-remark-images`],
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -92,7 +85,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
