@@ -3,15 +3,24 @@
 .thumbnail {
   display: block;
   margin-bottom: 12px;
-  padding: 4px;
+  border-radius: 0px;
+  margin-top: 10px;
+  padding: 20px;
   padding-bottom: 12px;
-  box-shadow: none;
+  padding-top: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
   transition: text-shadow 0.3s, opacity 0.4s;
   opacity: 0;
 
   p {
     font-size: 90%;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 991px) {
+  .thumbnail {
+    border-radius: 6px;
   }
 }
 
