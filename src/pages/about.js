@@ -14,7 +14,7 @@ export default ({ data }) => {
     .map(({ node }) => node)[0]
 
   return (
-    <>
+    <div>
       <Top title={'Alblog'} />
       <div
         style={{
@@ -28,7 +28,7 @@ export default ({ data }) => {
       >
         <div dangerouslySetInnerHTML={{ __html: resume.html }} />
       </div>
-    </>
+    </div>
   )
 }
 

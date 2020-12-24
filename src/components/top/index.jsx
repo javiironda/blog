@@ -10,10 +10,12 @@ export const Top = ({ title }) =>  (
       <Link to={`/`} className="link">
         {title}
       </Link>
-      <Link to={'/about'} className='link' style={{fontSize: '1.3', fontWeight: 'normal'}}>
+      {/* <Link to={'/about'} className='link' style={{fontSize: '1.2rem', fontWeight: 'normal'}}>
         About
-      </Link>
-
+      </Link> */}
+      <a href={'/admin/#/'} className='link' style={{fontSize: '1.2rem', fontWeight: 'normal'}}>
+        New Thought
+      </a>
       <span style={{position: 'absolute', top: '15px', right: '30px'}}>
 
       <ThemeSwitch />

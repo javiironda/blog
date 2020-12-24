@@ -2,9 +2,7 @@ module.exports = {
   title: `Alblog`,
   description: `I talk about technology, economy, dogs, sports...`,
   author: `Alba Montiel`,
-  introduction: `
-                I love revolutionizing the world with technology and wild ideas. But I love my dog even more.
-              `,
+  introduction: `I love revolutionizing the world with technology and wild ideas. But I love my dog even more.`,
   siteUrl: `https://alblog.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
