@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import * as Lang from '../constants'
 
+import { Top } from '../components/top'
+
 export default ({ data }) => {
   const resumes = data.allMarkdownRemark.edges
 
@@ -12,18 +14,21 @@ export default ({ data }) => {
     .map(({ node }) => node)[0]
 
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
-          3 / 4
-        )}`,
-      }}
-    >
-      <div dangerouslySetInnerHTML={{ __html: resume.html }} />
-    </div>
+    <>
+      <Top title={'Alblog'} />
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
+            3 / 4
+          )}`,
+        }}
+      >
+        <div dangerouslySetInnerHTML={{ __html: resume.html }} />
+      </div>
+    </>
   )
 }
 

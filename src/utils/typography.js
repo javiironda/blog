@@ -41,7 +41,7 @@ GitHubTheme.overrideThemeStyles = () => {
   }
 }
 
-const typography = new Typography(GitHubTheme)
+const typography = new Typography({ ...GitHubTheme, baseFontSize: '20px' })
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
