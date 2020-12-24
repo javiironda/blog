@@ -10,7 +10,7 @@ export const ThumbnailItem = ({ node }) => (
   <Link className={`thumbnail ${TARGET_CLASS}`} to={node.fields.slug}>
     <div key={node.fields.slug}>
       <h3>{node.frontmatter.title || node.fields.slug}</h3>
-      <p dangerouslySetInnerHTML={{ __html: node.html.length > maxChars ? node.html.slice(0, maxChars) + '... (read more)' : node.html}} />
+      <div dangerouslySetInnerHTML={{ __html: node.html.length > maxChars ? node.html.slice(0, maxChars) + '... (read more)' : node.html}} />
     </div>
   </Link>
 )
