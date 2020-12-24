@@ -21,6 +21,7 @@ function getDistance(currentPos) {
 }
 
 export default ({ data, location }) => {
+  console.log('data', data)
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
@@ -89,6 +90,7 @@ export const pageQuery = graphql`
             title
             category
           }
+          html
         }
       }
     }
