@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Turutupa/alblog
+  repo: javironda/blog
   branch: main
 
 media_folder: content/assets
