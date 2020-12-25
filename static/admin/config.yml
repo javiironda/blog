@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: javironda/blog
+  repo: javiironda/blog
   branch: main
 
 media_folder: content/assets
